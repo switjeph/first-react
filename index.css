@@ -1,59 +1,47 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
+html, body {
     margin: 0;
-    font-family: inter, sans-serif;
-    background-color: #282035;
-    color: white;
 }
 
 header {
-    height: 90px;
-    background-color: #21222A;
-    padding: 30px 25px;
-}
-
-nav {
+    background: #F55A5A;
     display: flex;
+    justify-content: center;
     align-items: center;
-    height: 100%;
+    color: white;
+    height: 55px;
 }
 
-nav > img {
-    width: 40px;
+header > img {
+    width: 24px;
     margin-right: 7px;
 }
 
-nav > span {
-    color: #62DAFB;
-    font-size: 1.4rem;
-    font-weight: 700;
+header > h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inter;
 }
 
-main {
-    padding: 60px 30px;
-    background-image: url(./react-logo-half.png);
-    background-repeat: no-repeat;
-    background-position:right 70%;
+article.journal-entry {
+    display: flex ;
+    margin-bottom: 36px;
+}
+article.journal-entry .maker {
+    width: 7px;
+    margin-right: 4px;
 }
 
-main > h1 {
-    margin: 0;
-    font-size: 2.4rem;
+article.journal-entry .main-image-container {
+    width: 125px;
+    height: 168px;
+    overflow: hidden;
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin-right: 19px;
 }
 
-.facts-list {
-    margin-top: 46px;
-    max-width: 400px;
-}
-
-.facts-list > li {
-    padding-block: 20px;
-    line-height: 19px;
-}
-.facts-list > li::marker {
-    color: #62DAFB;
-    font-size: 1.3rem;
+article.journal-entry .main-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
